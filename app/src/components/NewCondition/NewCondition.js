@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import { textAlign } from "@mui/system";
 import CardHeader from "../cardHeader/CardHeaderComponent";
-import UiControl from "../uiControl/UiControl";
+import NewConditionControl from "../newConditionControl/NewConditionControl";
 
 // const bull = (
 //   <Box
@@ -28,7 +28,9 @@ export default function CardComponent() {
           maxWidth: 400,
           minHeight: 700,
           maxHeight: 700,
-          marginLeft: 10,
+          position: "absolute",
+          top: "130px",
+          right: "900px",
           backgroundColor: "#826df7",
           boxShadow: 24,
         }}
@@ -38,8 +40,8 @@ export default function CardComponent() {
             sx={{ fontSize: 25, textAlign: "center", color: "white" }}
             gutterBottom
           >
-            <CardHeader title="Menu" />
-            <UiControl />
+            <CardHeader title="New Condition" />
+            <NewConditionControl />
           </Typography>
         </CardContent>
       </Card>
